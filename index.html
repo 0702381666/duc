@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Phung Tien Duc</title>
+            <style>
+                body{
+                    text-align: center;
+                }
+                h2{
+                    position: relative;
+                }
+                h2::after{
+                    content: ""; 
+                    display: block; 
+                    border-bottom: 2px solid rgb(65, 138, 133); 
+                    position: absolute;
+                    left: 45%;
+                    right: 45%;
+                    bottom:0;
+                }
+                h4{
+                    position: relative;
+                    display: inline-block;
+                }
+                h4 span.all{
+                    color: rgb(86, 136, 174);
+                }
+                h4 span:not(.all) {
+                    color: rgb(7, 7, 21); 
+                    margin-left: 20px; 
+                }
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                .product {
+                    width: 100px;
+                    height: 100px;
+                    background-color: rgb(101, 208, 144);
+                    border: 1px solid #ddd;
+                    padding: 40px;
+                    color: red;
+                    margin: 5px;
+                }
+                .product:empty::after {
+                    content: "Products";
+                }
+            </style>
+        </head>
+        <body>
+            <h2>MY PORTFOLIO</h2>
+            <h4><span class="all">All</span><span>Web App</span><span>UI/UX</span><span>Graphics Design</span><span>Mobile App</span><span>Branding</span><span>Marketing</span></h4>
+            <div class="container">
+                <div class="product">Products</div>
+                <div class="product">Products</div>
+                <div class="product">Products</div>
+            </div>
+            <div class="container">
+                <div class="product">Products</div>
+                <div class="product">Products</div>
+                <div class="product">Products</div>
+            </div>
+            <div class="container">
+                <div class="product">Products</div>
+                <div class="product">Products</div>
+                <div class="product">Products</div>
+            </div>
+        </body>
+    </html>
